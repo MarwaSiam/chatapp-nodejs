@@ -1,0 +1,122 @@
+/* ============================================
+   SUNSET GLASSMORPHISM DESIGN
+   ============================================ */
+
+:root {
+    --primary-yellow: #faf5cc;
+    --primary-pink: #fa9bcc;
+    --dark-purple: #68406a;
+    --glass-white: rgba(255, 255, 255, 0.55);
+    --border-glass: rgba(255, 255, 255, 0.4);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url("../images/background.png") center/cover no-repeat fixed;
+    min-height: 100vh;
+}
+
+.max-width-1000 { max-width: 900px; margin: 0 auto; }
+
+/* ============ NAVBAR ============ */
+.navbar {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 10px 0;
+}
+
+.brand-font {
+    background: linear-gradient(to right, #4e0861, #faadd3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ============ MESSAGES CONTAINER ============ */
+.messages-container {
+    overflow-y: auto;
+    background: var(--glass-white) !important;
+    backdrop-filter: blur(15px);
+    border-radius: 28px;
+    border: 1px solid var(--border-glass);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    height: calc(100vh - 280px);
+}
+
+/* my message */
+.my-bubble {
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-pink) 100%) !important;
+    color: var(--dark-purple) !important;
+    border-radius: 18px 18px 4px 18px;
+    padding: 12px 18px;
+    font-weight: 500;
+}
+
+/* other messages */
+.other-bubble {
+    background: rgba(255, 255, 255, 0.91) !important;
+    color: #334155 !important;
+    border-radius: 18px 18px 18px 4px;
+    padding: 12px 18px;
+}
+
+/* ============ AVATARS ============ */
+.avatar-circle, .avatar-sm {
+    width: 38px; height: 38px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 14px;
+    background: linear-gradient(135deg, var(--primary-yellow), var(--primary-pink)) !important;
+    color: var(--dark-purple) !important;
+    border: 2px solid white;
+}
+
+/* ============ INPUT AREA ============ */
+.input-area {
+    background: var(--glass-white) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.btn-send {
+    background: linear-gradient(135deg, var(--primary-yellow), var(--primary-pink)) !important;
+    border: none;
+    color: var(--dark-purple) !important;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-send:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(244, 114, 182, 0.3); }
+
+/* ============ SEARCH ============ */
+.search-bar {
+    background: var(--glass-white) !important;
+    border-radius: 15px;
+    border: 1px solid var(--border-glass);
+    overflow: hidden;
+}
+.search-bar .form-control { background: transparent; border: none; }
+.btn-white { background: white; border: none; font-size: 12px; font-weight: 600; }
+
+/* ============ ACTIONS ============ */
+.btn-action {
+    background: none; border: none; font-size: 10px; font-weight: 600; cursor: pointer; color: #64748b;
+}
+.btn-action.delete:hover { color: #ef4444; }
+
+/* Scrollbar Customization */
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
+
+/* ============ HIGHLIGHT EFFECT ============ */
+.highlight {
+    background-color: rgba(255, 245, 204, 0.85);
+    color: var(--dark-purple);
+    font-weight: 800;
+    padding: 0 4px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(250, 155, 204, 0.4);
+    border: 1px solid var(--primary-pink);
+}
